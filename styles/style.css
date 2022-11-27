@@ -43,6 +43,7 @@
   font-size: 102px;
   font-weight: 600;
   padding-left: 64px;
+  margin: 0;
 }
 
 .header__subtitle {
@@ -53,6 +54,7 @@
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+  margin: 0;
 }
 
 .header__main-illustration {
@@ -81,10 +83,10 @@
 
 
 
-.content {
+/* .content {
   padding: 0 100px;
-  /* выше установили отступы для секции */
-}
+  /* выше установили отступы для секции с контентом
+} */
 
 .description {
   padding: 100px 0;
@@ -96,12 +98,12 @@
   width: 80%;
   display: flex;
   justify-content: space-between;
-
+  margin: 0 auto;
 }
 
 .two-columns__brief {
   width: 175px;
-  padding-right: 50px;
+  /* padding-right: 50px; */
 }
 
 .two-columns__title {
@@ -122,6 +124,12 @@
   font-size: 24px;
   line-height: 34px;
   font-weight: normal;
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+.two-columns__paragraph:last-child {
+  padding-bottom: 0;
 }
 
 .two-columns__span-accent {
@@ -150,7 +158,7 @@
   text-align: center;
   width: 60%;
   padding-top: 20px;
-  padding-bottom: 40px;
+  /* padding-bottom: 60px; */
   margin: 0 auto;
 }
 
@@ -168,6 +176,7 @@
 .table__cell {
   width: 250px;
   align-content: flex-end;
+  margin-top: 60px;
 }
 
 .table__heading {
@@ -175,6 +184,11 @@
   line-height: 1.15;
   font-weight: 600;
   text-align: left;
+  margin: 0 0 20px;
+}
+
+.table__heading:last-of-type {
+  margin-bottom: 0;
 }
 
 .table__text {
@@ -182,6 +196,11 @@
   line-height: 1.2;
   font-weight: normal;
   text-align: left;
+  margin: 0 0 20px;
+}
+
+.table__text:last-child {
+  margin: 0;
 }
 
 .feynman {
@@ -189,7 +208,7 @@
   background-color: #f2f2f2;
   padding-bottom: 0;
   margin-bottom: 0;
-  height: 890px;
+  min-height: 890px;
   z-index: -1;
 }
 
@@ -243,7 +262,7 @@
   padding-bottom: 90px;
   margin-top: 0;
   overflow: hidden;
-  height: 877px;
+  min-height: 877px;
   z-index: -2;
 }
 
@@ -272,6 +291,7 @@
   top: 0;
   right: -210px;
   z-index: -1;
+  background-size: contain;
 }
 
 .table__theme_dark {
@@ -284,6 +304,7 @@
   color: white;
   margin-right: 0;
   margin-top: 80px;
+  margin-bottom: 0;
 }
 
 .footer {
@@ -297,6 +318,7 @@
   background-color: #1f1f1f;
   padding-top: 60px;
   padding-bottom: 40px;
+  box-sizing: border-box;
 }
 
 .footer__columns {
@@ -327,7 +349,7 @@
   background-repeat: no-repeat;
   width: 228px;
   height: 32px;
-  padding-bottom: 36%;
+  /* padding-bottom: 36%; */
 }
 
 .footer__author {
