@@ -7,7 +7,6 @@
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: "Helvetica Neue", Arial, sans-serif;
-  padding: 0 100px;
 }
 
 .header {
@@ -21,9 +20,8 @@
   position: relative;
   background-color: #f2f2f2;
   background-size: cover;
-  z-index: -3;
+  z-index: 0;
 }
-
 
 .logo {
   width: 228px;
@@ -63,7 +61,7 @@
   right: 0;
   width: 765px;
   height: 608px;
-  z-index: -1;
+  z-index: 1;
 }
 
 .header__square-pic {
@@ -73,15 +71,14 @@
   width: 568px;
   right: 0;
   top: 64px;
-  z-index: -2;
+  z-index: 0;
 }
 
 .header__link {
   color: #2f80ed;
   text-decoration: none;
+  z-index: 1;
 }
-
-
 
 /* .content {
   padding: 0 100px;
@@ -102,16 +99,13 @@
 }
 
 .two-columns__brief {
-  width: 175px;
-  /* padding-right: 50px; */
-}
-
-.two-columns__title {
   font-size: 18px;
   line-height: 1.2;
   font-weight: normal;
   color: #2f80ed;
   text-align: left;
+  margin: 0;
+  min-width: 175px;
 }
 
 .two-columns__main-text {
@@ -158,7 +152,6 @@
   text-align: center;
   width: 60%;
   padding-top: 20px;
-  /* padding-bottom: 60px; */
   margin: 0 auto;
 }
 
@@ -170,7 +163,6 @@
   flex-wrap: wrap;
   margin: 0 auto;
   padding: 0;
-
 }
 
 .table__cell {
@@ -210,7 +202,6 @@
   padding-bottom: 0;
   margin-bottom: 0;
   min-height: 890px;
-  z-index: -1;
 }
 
 .feynman__image {
@@ -254,6 +245,7 @@
   font-size: 36px;
   font-weight: normal;
   text-decoration: none;
+  z-index: 3;
 }
 
 .kaufman {
@@ -263,10 +255,8 @@
   padding-bottom: 90px;
   margin-top: 0;
   overflow: hidden;
-  /* min-height: 877px; */
   z-index: -2;
 }
-
 
 .section-title_theme_dark {
   color: white;
@@ -279,11 +269,11 @@
 .kaufman__triangle {
   background-image: url(../images/kaufman-triangle.svg);
   background-repeat: no-repeat;
+  background-size: contain;
   position: absolute;
   top: 0;
   right: -210px;
   z-index: -1;
-  /* background-size: border-box; */
   width: 877px;
   height: 877px;
 }
@@ -292,7 +282,6 @@
   color: white;
 }
 
-/* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
   color: white;
@@ -303,9 +292,9 @@
 
 .footer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+  /* align-items: flex-start; */
   margin: 0 auto;
   overflow: hidden;
   min-height: 350px;
@@ -330,7 +319,7 @@
   height: auto;
 }
 
-.footer__column_content {
+.footer__column_content_about {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -343,7 +332,6 @@
   background-repeat: no-repeat;
   width: 228px;
   height: 32px;
-  /* padding-bottom: 36%; */
 }
 
 .footer__author {
@@ -362,15 +350,19 @@
 }
 
 .footer__column-links {
+  list-style: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__column-link {
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
   text-decoration: none;
-  list-style: none;
   color: white;
-  text-align: left;
-  margin: 0;
-  padding: 0;
+  z-index: 1;
 }
 
 .footer__column-heading {
@@ -388,7 +380,6 @@
   color: white;
   text-align: right;
 }
-
 
 .footer__social-icon {
   width: 16px;
