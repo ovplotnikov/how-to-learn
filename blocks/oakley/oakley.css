@@ -1,9 +1,8 @@
 .oakley {
   position: relative;
-  /* top: -100px; */
-  overflow: auto;
   z-index: -1;
   background-color: #f2f2f2;
   padding-bottom: 100px;
   margin-bottom: 0;
+  padding-top: 160px;
 }
