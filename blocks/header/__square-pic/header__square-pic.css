@@ -1,5 +1,7 @@
 .header__square-pic {
-  background-image: url(../../../images/square-pic-header.png);
+  background-color: #2f80ed;
+  background-size: cover;
+  background-repeat: no-repeat;
   position: absolute;
   height: 568px;
   width: 568px;
